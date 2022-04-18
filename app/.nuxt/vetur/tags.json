@@ -1,0 +1,11 @@
+{
+  "Form": {
+    "description": "Auto imported from components/Form.vue"
+  },
+  "JobTable": {
+    "description": "Auto imported from components/JobTable.vue"
+  },
+  "Table": {
+    "description": "Auto imported from components/Table.vue"
+  }
+}
