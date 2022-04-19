@@ -1,13 +1,11 @@
 <template>
-    <v-data-table
-        :headers="headers" :items="rols"
-     >
-  <template v-slot:[`item.edit`] = "{item}">
-    <v-btn color="primary" @click="editItem(item)">Edit</v-btn>
-  </template>
-  <template v-slot:[`item.delete`] = "{item}">
-    <v-btn color="primary" @click="deleteItem(item)">Delete</v-btn>
-  </template>
+  <v-data-table :headers="headers" :items="rols">
+    <template v-slot:[`item.edit`]="{item}">
+      <v-btn color="primary" @click="editItem(item)">Edit</v-btn>
+    </template>
+    <template v-slot:[`item.delete`]="{item}">
+      <v-btn color="primary" @click="deleteItem(item.id)">Delete</v-btn>
+    </template>
   </v-data-table>
 </template>
 
@@ -16,9 +14,11 @@ export default {
     data () {
       return {
         headers: [
-        { text: 'iD', value: 'fat' },
-          { text: 'Name', value: 'calories' },
-          { text: 'Description', value: 'fat' },
+        { text: 'iD', value: 'id' },
+          { text: 'Name', value: 'name' },
+          { text: 'Description', value: 'description' },
+          { text: 'Edit', value: 'edit' },
+          { text: 'Delete', value: 'delete' },
         ],
       }
     },
@@ -27,8 +27,8 @@ export default {
         return this.$store.state.rols.data;
       }
     },
-    async fetch(){
-        this.$store.commit('rols/storeRols',(await this.$axios.get('http://127.0.0.1:8000/rols')).data);
+    async fetch() {
+      this.$store.commit("rols/storeRols",(await this.$axios.get("http://localhost:8000/rols")).data);
     },
     methods: {
       editItem(rol){
@@ -36,8 +36,9 @@ export default {
         this.$store.commit("rol/storeName",rol.name);
         this.$store.commit("rol/storeDescription",rol.description);
     },
-      async deleteItem(it){
-        await this.$axios.delete('http://127.0.0.1:8000/'+id);
+      async deleteItem(id){
+        await this.$axios.delete('http://localhost:8000/rols'+id);
+        this.$store.commit("rols/storeRols",(await this.$axios.get("http://localhost:8000/rols")).data);
       }
     }
   }

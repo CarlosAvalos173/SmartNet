@@ -17,6 +17,7 @@ rol = APIRouter()
 #Obtiene todos los roles
 @rol.get("/rols", response_model=list[Rol_outs], tags=["rols"])
 def get_rols():
+    print(conn.execute(rols.select()).fetchall())
     return conn.execute(rols.select()).fetchall()
 
 #Obtiene un rol por id

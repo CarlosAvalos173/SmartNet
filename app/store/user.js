@@ -1,4 +1,4 @@
-export const state = () => ({
+export const estado = () => ({
     id:0,
     first_name:"",
     last_name:"",
@@ -12,35 +12,35 @@ export const state = () => ({
 })
 
 export const mutations = {
-    storeId:(state,data) =>{
-        state.id = data
+    storeId:(estado,data) =>{
+        estado.id = data
     },
-    storeFName:(state,data) =>{
-        state.first_name = data
+    storeFName:(estado,data) =>{
+        estado.first_name = data
     },
-    storeLName:(state,data) =>{
-        state.last_name = data
+    storeLName:(estado,data) =>{
+        estado.last_name = data
     },
-    storeAddress:(state,data) =>{
-        state.address = data
+    storeAddress:(estado,data) =>{
+        estado.address = data
     },
-    storeTelephone:(state,data) =>{
-        state.telephone = data
+    storeTelephone:(estado,data) =>{
+        estado.telephone = data
     },
-    storeEmail:(state,data) =>{
-        state.email = data
+    storeEmail:(estado,data) =>{
+        estado.email = data
     },
-    storeRol_id:(state,data) =>{
-        state.rol_id = data
+    storeRol_id:(estado,data) =>{
+        estado.rol_id = data
     },
-    storeUsername:(state,data) =>{
-        state.username = data
+    storeUsername:(estado,data) =>{
+        estado.username = data
     },
-    storePassword:(state,data) =>{
-        state.password = data
+    storePassword:(estado,data) =>{
+        estado.password = data
     },
-    storeDate:(state,data) =>{
-        state.created_at = data
+    storeDate:(estado,data) =>{
+        estado.created_at = data
     },
 }
 

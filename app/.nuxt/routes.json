@@ -2,19 +2,22 @@
   {
     "name": "plantilla",
     "path": "/plantilla",
-    "component": "C:\\\\Users\\\\Solem\\\\Downloads\\\\proyectoYorick-master\\\\proyectoYorick-master\\\\app\\\\pages\\\\plantilla.vue",
-    "chunkName": "pages/plantilla"
+    "component": "C:\\\\Users\\\\Solem\\\\Desktop\\\\Proyecto\\\\SmartNet\\\\app\\\\pages\\\\plantilla.vue",
+    "chunkName": "pages/plantilla",
+    "_name": "_f6882a00"
   },
   {
     "name": "prueba",
     "path": "/prueba",
-    "component": "C:\\\\Users\\\\Solem\\\\Downloads\\\\proyectoYorick-master\\\\proyectoYorick-master\\\\app\\\\pages\\\\prueba.vue",
-    "chunkName": "pages/prueba"
+    "component": "C:\\\\Users\\\\Solem\\\\Desktop\\\\Proyecto\\\\SmartNet\\\\app\\\\pages\\\\prueba.vue",
+    "chunkName": "pages/prueba",
+    "_name": "_5f2c2e38"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Solem\\\\Downloads\\\\proyectoYorick-master\\\\proyectoYorick-master\\\\app\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\Solem\\\\Desktop\\\\Proyecto\\\\SmartNet\\\\app\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_10f9c40f"
   }
 ]

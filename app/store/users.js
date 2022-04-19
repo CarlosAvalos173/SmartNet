@@ -1,9 +1,9 @@
-export const state = () => ({
+export const estado = () => ({
     data:[]
 })
 
 export const mutations = {
-    storeUsers:(state,data) =>{
-        state.data = data
+    storeUsers:(estado,data) =>{
+        estado.data = data
     },
 }
