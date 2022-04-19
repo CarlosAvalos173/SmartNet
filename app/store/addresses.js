@@ -3,7 +3,7 @@ export const state = () => ({
 })
 
 export const mutations = {
-    storeRols:(state,data) =>{
+    storeAddresses:(state,data) =>{
         state.data = data
     }
 }

@@ -37,7 +37,7 @@ export default {
         this.$store.commit("rol/storeDescription",rol.description);
     },
       async deleteItem(id){
-        await this.$axios.delete('http://localhost:8000/rols'+id);
+        await this.$axios.delete('http://localhost:8000/rols/'+id);
         this.$store.commit("rols/storeRols",(await this.$axios.get("http://localhost:8000/rols")).data);
       }
     }
